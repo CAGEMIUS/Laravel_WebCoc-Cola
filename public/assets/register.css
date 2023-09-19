@@ -1,0 +1,30 @@
+body {
+    font-family: "TCCC-UnityHeadline Regular";
+}
+.boton{
+    background-color: #C90703;
+    border: 2px solid #000000;
+}
+.boton1{
+    border: 2px solid #C90703;
+}
+.bg-image {
+    background-size: cover; /* Para que la imagen cubra todo el espacio del elemento */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el elemento */
+  }
+img{
+    height: 776px;
+    width: 537px;
+}
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}

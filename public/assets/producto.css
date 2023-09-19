@@ -1,0 +1,165 @@
+body {
+    font-family: "TCCC-UnityHeadline Regular";
+}
+
+ul li{
+    margin-left: 20px;
+}
+
+h5{
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+#Salir{
+    color: #C90703;
+}
+
+/*Estilo de las categorias de los productos*/
+.productos {
+    padding: 20px;
+}
+
+.productos h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categorias {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categorias ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.categorias ul li {
+    margin-right: 10px;
+    display: flex;
+}
+
+.categorias ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.categorias ul li a:hover {
+    background-color: #C90703;
+    color: #ffffff;
+}
+
+/* Estilos para pantallas de hasta 800px (dispositivos móviles) */
+@media (max-width: 800px) {
+    .productos h2 {
+        font-size: 20px;
+    }
+
+    .categorias ul li {
+        margin-right: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categorias ul li a {
+        padding: 3px 8px;
+    }
+}
+
+/*Estilo de las imagnes de los productos*/
+.galeria , .galeria2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen {
+    width: 500px;
+    margin: 10px;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Pie de pagina*/
+.Pie-pagina {
+    width: 100%;
+    background-color: #000000;
+}
+
+.Pie-pagina .Grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.Pie-pagina .Grupo-1 .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pie-pagina .Grupo-1 .caja figure img{
+    width: 250px;
+}
+
+.Pie-pagina .Grupo-1 .caja h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.Pie-pagina .Grupo-1 .caja p{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.Pie-pagina .Grupo-1 .Red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #C90703;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 15%;
+}
+
+.Pie-pagina .Grupo-1 .Red-social a:hover{
+    color: #FFB7F1;
+}
+.Pie-pagina .Grupo-2{
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+.Pie-pagina .Grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .Pie-pagina .Grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

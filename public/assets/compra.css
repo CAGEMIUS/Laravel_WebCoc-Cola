@@ -1,0 +1,150 @@
+body {
+    font-family: "TCCC-UnityHeadline Regular";
+}
+
+ul li{
+    margin-left: 20px;
+}
+h5{
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+#Salir{
+    color: #C90703;
+}
+
+/*Estilo de la compra de los productos*/
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #C90703;
+    margin-top: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.box {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15%;
+    border: 3px solid #000000;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.capa {
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #C90703;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.increment-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #C90703;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.increment-btn:hover {
+    transform: scale(1.15);
+}
+
+/*Pie de pagina*/
+.Pie-pagina {
+    width: 100%;
+    background-color: #000000;
+}
+
+.Pie-pagina .Grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.Pie-pagina .Grupo-1 .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pie-pagina .Grupo-1 .caja figure img{
+    width: 250px;
+}
+
+.Pie-pagina .Grupo-1 .caja h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.Pie-pagina .Grupo-1 .caja p{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.Pie-pagina .Grupo-1 .Red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #C90703;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 15%;
+}
+
+.Pie-pagina .Grupo-1 .Red-social a:hover{
+    color: #FFB7F1;
+}
+.Pie-pagina .Grupo-2{
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+.Pie-pagina .Grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .Pie-pagina .Grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
